@@ -11,12 +11,12 @@ public class ReverseArray {
 
     // USING TWO POINTERS o(n); else we can use two for loops o(n^2)
     static void reverse(int[] arr) {
-        int start=0;
-        int end = arr.length-1;
-        while(start<end){
-            int swap =arr[start];
-            arr[start]=arr[end];
-            arr[end]= swap;
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end) {
+            int swap = arr[start];
+            arr[start] = arr[end];
+            arr[end] = swap;
             start++;
             end--;
         }
